@@ -57,7 +57,7 @@ public class Song implements Comparable<Song> {
  *若equals被覆盖过，则hashCode也必须被覆盖
  * hashCode的默认行为是对在堆上的对象产生独特的值
  * equals的默认行为是执行==比较，即测试两个引用是否对应堆上同一个对象
- * 注意String的equals方法会先执行==比较，若不是对同个对象的引用则会进一步比较字符串的字符是否相等！
+ * 注意String的equals方法会先执行==比较，若不是对同个对象的引用则会进一步比较字符串的字符是否相等！若进一步比较字符串相等则返回true
  * 若equals没有被覆盖过，则两个对象永远无法被视为相同
  * hashcode是用来缩小寻找成本，但最终还是要用equals()来认定对象是否真的相等（哈希碰撞）*/
     @Override
